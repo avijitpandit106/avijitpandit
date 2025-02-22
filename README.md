@@ -1,2 +1,3 @@
 # avijitpandit
- A portfoliowebsite for Avijit pandit
+
+A portfolio website for Avijit pandit
