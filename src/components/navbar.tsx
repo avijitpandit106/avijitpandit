@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="static flex justify-between items-center p-6 md:p-8 lg:p-12 mx-4 md:mx-16 lg:mx-40 text-gray-200">
-      <h1 className="font-light text-3xl md:text-5xl cursor-pointer transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+      <h1 className="font-light text-3xl md:text-5xl transition-transform duration-300 ease-in-out transform group-hover:scale-110">
         Avijit Pandit
       </h1>
 

@@ -20,21 +20,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   githubRepo,
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-3xl p-6 w-80 text-center mx-auto">
+    <div className="bg-white shadow-lg rounded-3xl p-6 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center mx-auto">
       <Image
         src={projectImage}
         alt="Project Image"
-        width={150}
-        height={150}
-        className="mx-auto mb-4 rounded-3xl ring-4 ring-slate-900"
+        width={200}
+        height={200}
+        className="mx-auto mb-4 rounded-3xl ring-4 ring-slate-900 object-cover"
       />
-      <h2 className="text-xl font-bold text-gray-900">{projectName}</h2>
-      <p className="text-gray-600 mt-2">{projectDescription}</p>
-      <div className="mt-4 flex justify-center space-x-4">
+      <h2 className="text-lg sm:text-xl font-bold text-gray-900">
+        {projectName}
+      </h2>
+      <p className="text-gray-600 mt-2 text-sm sm:text-base">
+        {projectDescription}
+      </p>
+      <div className="mt-4 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
         <Link
           href={projectSite}
           target="_blank"
-          className="px-8 py-2 bg-gray-300 text-gray-700 rounded-2xl shadow-md hover:bg-gray-400 hover:scale-105 transition duration-300 flex justify-center items-center gap-1"
+          className="px-6 py-2 bg-gray-300 text-gray-700 rounded-2xl shadow-md hover:bg-gray-400 hover:scale-105 transition duration-300 flex justify-center items-center gap-1"
         >
           Visit <HiOutlineArrowTopRightOnSquare />
         </Link>

@@ -23,3 +23,10 @@
   }
 }
 
+.custom-dots .slick-dots li button:before {
+  color: white;
+}
+
+.custom-dots .slick-dots li.slick-active button:before {
+  color: blue;
+}
