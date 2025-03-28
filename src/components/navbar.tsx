@@ -16,7 +16,10 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <ul className="hidden md:flex justify-between items-center gap-8">
         {['About', 'Blog', 'Projects', 'Gears'].map((item) => (
-          <li key={item} className="text-lg md:text-2xl relative group text-gray-200 font-medium">
+          <li
+            key={item}
+            className="text-lg md:text-2xl relative group text-gray-200 font-medium"
+          >
             <Link href={''} className="relative">
               {item}
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gray-200 scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
@@ -39,13 +42,14 @@ export default function Navbar() {
       {/* Fullscreen Mobile Menu */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-xs flex flex-col items-center justify-center gap-8 text-white z-50 transition-transform transform duration-500 ease-in-out"
+          className="fixed inset-0 bg-black/50 backdrop-blur-md flex flex-col items-center justify-center gap-8 text-white z-50 transition-all duration-500 ease-in-out"
           style={{ transition: 'transform 0.5s ease-in-out' }}
         >
           {/* Close Button */}
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-6 right-10"
+            className="absolute top-6 right-10 w-7 cursor-pointer"
+            aria-label="Close Menu"
           >
             <Image src={assets.close_white} alt="" className="w-7" />
           </button>
