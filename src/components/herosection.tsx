@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       {/* Text Content */}
       <div className="flex flex-col justify-center items-center py-6 lg:py-0 lg:px-12">
-        <span className="text-gray-300 text-lg md:text-xl">
+        <span className="text-gray-100 text-lg md:text-xl">
           Hello, I&apos;m
         </span>
         <span className="text-white font-black text-[clamp(2.5rem,6vw,4rem)]">
@@ -37,7 +37,8 @@ export default function HeroSection() {
             Download CV
           </Link>
           <Link
-            href={'#'}
+            href={'/contact'}
+            target='_blank'
             className="border-2 px-6 py-2 border-black bg-black text-white font-semibold rounded-full text-sm transition duration-300 ease-in hover:scale-105"
           >
             Contact Me

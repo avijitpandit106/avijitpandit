@@ -5,8 +5,9 @@ import {
   FaGithubSquare,
   FaLinkedin,
   FaInstagramSquare,
-  FaYoutubeSquare,
+  
 } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 import { IconContext } from 'react-icons';
 
 export default function Footer() {
@@ -25,12 +26,15 @@ export default function Footer() {
             Quick Links
           </h1>
           <ul className="flex flex-col gap-4">
+            <li className="text-sm text-gray-400 hover:text-white transition">
+              <Link href={'/'}>Home</Link>
+            </li>
             {['About', 'Blog', 'Projects', 'Gears'].map((item) => (
               <li
                 key={item}
                 className="text-sm text-gray-400 hover:text-white transition"
               >
-                <Link href={''}>{item}</Link>
+                <Link href={`${item.toLowerCase()}`}>{item}</Link>
               </li>
             ))}
           </ul>
@@ -46,7 +50,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href={'#'}
+                href={'/contact'}
                 target="_blank"
                 className="text-gray-400 hover:text-white transition flex items-center gap-1"
               >
@@ -93,8 +97,14 @@ export default function Footer() {
               href: 'https://www.linkedin.com/in/avijit-pandit-917947335/',
               icon: <FaLinkedin />,
             },
-            { href: 'https://www.instagram.com/', icon: <FaInstagramSquare /> },
-            { href: 'https://www.youtube.com/', icon: <FaYoutubeSquare /> },
+            {
+              href: 'https://www.instagram.com/avijitpandit106/',
+              icon: <FaInstagramSquare />,
+            },
+            {
+              href: 'https://x.com/avijitpandit106',
+              icon: <FaSquareXTwitter />,
+            },
           ].map((social, index) => (
             <Link
               key={index}

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import './globals.css';
+import '@/app/globals.css';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'Software Developer | Specializing in React, Node.js, and scalable architectures.',
 };
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased bg-linear-to-b from-blue-500 to-purple-500 text-gray-800 `}
+        className={`${poppins.className} antialiased bg-linear-to-b from-blue-400 via-teal-400 to-purple-300 text-gray-800 `}
       >
         <main className="min-h-screen">
           <Navbar />

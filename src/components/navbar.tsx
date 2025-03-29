@@ -9,9 +9,11 @@ export default function Navbar() {
 
   return (
     <nav className="static flex justify-between items-center p-6 md:p-8 lg:p-12 mx-4 md:mx-16 lg:mx-40 text-gray-200">
-      <h1 className="font-light text-3xl md:text-5xl transition-transform duration-300 ease-in-out transform group-hover:scale-110">
-        Avijit Pandit
-      </h1>
+      <Link href={'/'} className="flex items-center gap-2 group">
+        <h1 className="font-light text-3xl md:text-5xl">
+          Avijit Pandit
+        </h1>
+      </Link>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex justify-between items-center gap-8">
@@ -20,7 +22,7 @@ export default function Navbar() {
             key={item}
             className="text-lg md:text-2xl relative group text-gray-200 font-medium"
           >
-            <Link href={''} className="relative">
+            <Link href={`/${item.toLowerCase()}`} className="relative">
               {item}
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gray-200 scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>
