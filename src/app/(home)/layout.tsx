@@ -23,9 +23,9 @@ export default function MainLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased bg-linear-to-b from-blue-400 via-teal-400 to-purple-300 text-gray-800 `}
+        className={`${poppins.className} antialiased text-gray-800 `}
       >
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-cyan-700">
           <Navbar />
           {children}
           <Footer />

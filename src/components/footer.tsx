@@ -46,7 +46,7 @@ export default function Footer() {
           </h1>
           <ul className="flex flex-col gap-4">
             <li className="text-sm text-gray-400">
-              dev.avijitpandit@proton.me
+              dev.avijit404@gmail.com
             </li>
             <li>
               <Link

@@ -11,7 +11,7 @@ const itim = Itim({
 export default function About() {
   return (
     <section
-      className="flex flex-col-reverse lg:flex-row text-white justify-center items-center gap-8 lg:gap-20 text-center py-12 sm:py-16 md:py-20 lg:py-28 px-6 md:px-12 lg:px-16 bg-gradient-to-b from-teal-600 from-10% to-cyan-600 to-90%"
+      className="flex flex-col-reverse lg:flex-row text-white justify-center items-center gap-8 lg:gap-20 text-center py-12 sm:py-16 md:py-20 lg:py-28 px-6 md:px-12 lg:px-16 bg-teal-700"
       id="about"
     >
       {/* Text Section */}
