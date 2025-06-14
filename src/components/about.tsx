@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { assets } from '../../public/assets/assets';
 import { Itim } from 'next/font/google';
+import { motion } from 'framer-motion';
 
 const itim = Itim({
   subsets: ['latin'],
@@ -10,7 +11,11 @@ const itim = Itim({
 
 export default function About() {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: true }}
       className="flex flex-col-reverse lg:flex-row text-white justify-center items-center gap-8 lg:gap-20 text-center py-12 sm:py-16 md:py-20 lg:py-28 px-6 md:px-12 lg:px-16 bg-teal-700"
       id="about"
     >
@@ -64,6 +69,6 @@ export default function About() {
           className="rounded-3xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-[0_0_15px_rgba(255,255,255,0.4)]"
         />
       </div>
-    </section>
+    </motion.section>
   );
 }

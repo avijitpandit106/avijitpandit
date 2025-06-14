@@ -1,5 +1,5 @@
-import React from 'react';
+import AboutContent from '@/components/aboutcontent';
 
-export default function About() {
-  return <div>Hello World! This is the about page.</div>;
+export default function AboutPage() {
+  return <AboutContent />;
 }

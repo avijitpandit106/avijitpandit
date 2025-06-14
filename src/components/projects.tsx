@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Itim } from 'next/font/google';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { motion } from 'framer-motion';
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
@@ -54,7 +55,11 @@ export default function Projects() {
   };
 
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: true }}
       className="bg-gray-900 flex flex-col justify-center items-center py-10 sm:py-14 md:py-20 lg:py-24 px-4 sm:px-6 md:px-10 lg:px-14"
       id="projects"
     >
@@ -89,6 +94,6 @@ export default function Projects() {
         <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-blue-500 origin-left scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 group-hover:shadow-md"></span>
       </Link>
       </div>
-    </section>
+    </motion.section>
   );
 }
