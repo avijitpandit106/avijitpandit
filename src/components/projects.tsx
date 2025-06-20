@@ -4,14 +4,14 @@ import dynamic from 'next/dynamic';
 import ProjectCard from './projectcard';
 import { workData } from '../../public/assets/assets';
 import Link from 'next/link';
-import { Itim } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { motion } from 'framer-motion';
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
-const itim = Itim({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: '400',
 });
@@ -65,7 +65,7 @@ export default function Projects() {
     >
       <div className="container mx-auto max-w-7xl">
       <h1
-        className={`${itim.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-gray-100 font-bold pb-10 sm:pb-14`}
+        className={`${spaceGrotesk.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-gray-100 font-bold pb-10 sm:pb-14`}
       >
         My Projects
       </h1>

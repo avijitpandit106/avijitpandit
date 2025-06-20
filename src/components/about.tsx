@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { assets } from '../../public/assets/assets';
-import { Itim } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import { motion } from 'framer-motion';
 
-const itim = Itim({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: '400',
 });
@@ -23,12 +23,12 @@ export default function About() {
       <div className="flex flex-col pt-20 gap-6 sm:gap-8 lg:gap-10 items-start text-left max-w-full sm:max-w-xl">
         <div className="flex flex-col gap-4 sm:gap-6 items-start text-left leading-relaxed">
           <div
-            className={`${itim.className} text-5xl sm:text-6xl md:text-7xl font-black text-white`}
+            className={`${spaceGrotesk.className} text-5xl sm:text-6xl md:text-7xl font-black text-white`}
           >
             Hi,
           </div>
           <div
-            className={`${itim.className} text-4xl sm:text-5xl md:text-6xl font-black text-white`}
+            className={`${spaceGrotesk.className} text-4xl sm:text-5xl md:text-6xl font-black text-white`}
           >
             My Name is Avijit Pandit.
           </div>

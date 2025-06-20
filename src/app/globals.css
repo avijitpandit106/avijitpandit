@@ -30,3 +30,51 @@
 .custom-dots .slick-dots li.slick-active button:before {
   color: blue;
 }
+
+.article {
+  @apply flex flex-col gap-3 text-lg tracking-wide mb-20;
+}
+
+.article > h1 {
+  @apply text-4xl text-cyan-900 font-bold mb-4;
+}
+
+.article > h2 {
+  @apply text-3xl text-cyan-800 font-semibold mb-3;
+}
+
+.article > h3 {
+  @apply text-2xl text-cyan-700 font-semibold mb-2;
+}
+
+.article > h4 {
+  @apply text-xl text-cyan-600 font-semibold mb-1;
+}
+
+.article > ol {
+  @apply list-decimal flex flex-col gap-2;
+}
+
+.article > ul {
+  @apply list-disc flex flex-col gap-2;
+}
+
+.article > pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+  overflow-y: auto;   /* Optional: only vertical scroll if needed */
+}
+
+
+.article > blockquote {
+  @apply pl-5 italic border-l-4 border-neutral-600;
+}
+
+.article > p {
+  @apply text-neutral-800;
+}
+
+.article a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}

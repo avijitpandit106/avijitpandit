@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
 import About from '@/components/about';
 import HeroSection from '@/components/herosection';
 import Projects from '@/components/projects';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
