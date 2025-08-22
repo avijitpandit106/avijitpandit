@@ -23,6 +23,10 @@
   }
 }
 
+.custom-dots .slick-slide > div {
+  height: 400px;
+}
+
 .custom-dots .slick-dots li button:before {
   color: white;
 }

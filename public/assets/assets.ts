@@ -70,6 +70,21 @@ export const assets = {
   right_arrow_bold_dark,
 };
 
+export const images = [
+  {
+    src: '/basic-portfolio.png',
+  },
+  {
+    src: '/todo-list.png',
+  },
+  {
+    src: '/avijitpandit.png',
+  },
+  {
+    src: '/nexxus.png',
+  },
+];
+
 export const workData = [
   {
     index: 0,

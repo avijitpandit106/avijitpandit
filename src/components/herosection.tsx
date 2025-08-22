@@ -31,14 +31,15 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex gap-6 items-center py-4">
           <Link
-            href={'#'}
+            href={'/AvijitPanditResume.pdf'}
+            target="_blank"
             className="border-2 px-5 py-2 border-gray-200 bg-gray-200 text-black rounded-full text-sm font-semibold transition duration-300  hover:bg-white hover:text-black hover:scale-105"
           >
             Download CV
           </Link>
           <Link
             href={'/contact'}
-            target='_blank'
+            target="_blank"
             className="border-2 px-6 py-2 border-black bg-black text-white font-semibold rounded-full text-sm transition duration-300 ease-in hover:scale-105"
           >
             Contact Me
